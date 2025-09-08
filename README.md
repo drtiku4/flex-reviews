@@ -7,7 +7,7 @@ In /server: npm i
 
 In /client: npm i
 
-Environment variables
+## Environment variables
 
 Create /server/.env with:
 
@@ -21,14 +21,17 @@ Create /client/.env with:
 
 VITE_API_URL=http://localhost:4000
 
-## Run
+## Running the app
+
+Open two terminals:
+
 Start backend (from /server): npm run dev
 
 Start frontend (from /client): npm run dev
 
 The frontend proxies /api to the backend in dev.
 
-Tests (frontend)
+## Tests (frontend)
 From /client:
 
 npm run test (watch)
