@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { fetchReviews } from "../services/api";
 import type { Review } from "../types/review";
-import ReviewCard from "../components/ReviewCard";
 
 export default function PropertyPage() {
   const [reviews, setReviews] = useState<Review[]>([]);

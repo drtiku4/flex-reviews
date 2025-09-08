@@ -1,4 +1,3 @@
-import React from "react";
 import type { TrendPoint } from "../types/review";
 import {
   ResponsiveContainer,

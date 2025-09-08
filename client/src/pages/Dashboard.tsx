@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import FilterBar from "../components/FilterBar";
 import TrendChart from "../components/TrendChart";
 import ReviewCard from "../components/ReviewCard";
