@@ -1,14 +1,14 @@
 import mongoose from "mongoose";
+import { config } from "./index.ts";
 
 export const connectDB = async () => {
+  const uri = config.mongoUri;
   try {
-    const uri = process.env.MONGO_URI;
-    if (!uri) throw new Error("MONGO_URI is not defined in .env");
-
-    await mongoose.connect(uri);
+    await mongoose.connect(uri, {
+    });
     console.log("MongoDB connected");
   } catch (err) {
     console.error("MongoDB connection error:", err);
-    process.exit(1);
+    throw err;
   }
 };
